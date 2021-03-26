@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     height: 100%;
 }
 
@@ -38,7 +38,7 @@ a {
 
 .heading {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -108,50 +108,96 @@ a {
     width: 90%;
     padding-top: 10px;
     margin: 50px auto;
-    background: linear-gradient(to right, #dadcdf, #888c8f);
+    text-align: center;
+}
 
+.about-title {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .cards {
-    width: 13.5%;
-    border: 1px solid #ccc;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    border-radius: 30px;
-    margin: 0 5px 50px 0;
-    transition: 0.3s;
-    text-align: center;
+    display: inline-block;
+    border-radius: 35px;
+    box-shadow: 5px 3px 5px #aaaaaa;
+    width: 190px;
+    height: 280px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    background-color: #3F3D56;
     color: white;
-    padding: 20px 0;
+    position: relative;
+    animation: mymove 3s infinite;
     background: linear-gradient(to right, #3F3D56, #3F3D56);
 }
 
-.card h3,
-.cards h3 {
-    font-size: 19px;
-}
-
-.card:hover,
 .cards:hover {
     opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.5s;
+    animation-play-state: paused;
 }
 
-.card p,
-.cards p {
+.cards img {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 33px;
+}
+
+.cards h3 {
     font-size: 15px;
+    margin-top: 160px;
+}
+
+.cards p {
+    font-size: 10px;
+    margin-top: 3px;
+    opacity: 0.7;
+}
+
+.instagram img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 220px;
+    left: 60px;
+}
+
+.github img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+
+#member1 {animation-timing-function: linear;}
+#member2 {animation-timing-function: ease;}
+#member3 {animation-timing-function: ease-in;}
+#member4 {animation-timing-function: ease-out;}
+#member5 {animation-timing-function: ease-in-out;}
+  
+@keyframes mymove {
+    from {top: -10px;}
+    to {top: 60px;}
+    from {top: 60px;}
+    to {top: -10px;}
 }
 
 footer {
     width: 100%;
     bottom: 0px;
     margin: 0 auto;
-    padding: 30px 20px;
-    height: 70px;
+    height: 30px;
     background-color: #3F3D56;
 
 }
 
 footer p {
     color: white;
-    font-size: 19px;
+    font-size: 10px;
     text-align: center;
+    padding: 5px;
 }
