@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: block;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
+a {
+    color: #fff;
+    font-style: unset;
+    text-decoration: none
+}
+
+/*ridho*/
+.container-content {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #dadcdf, #888c8f);
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card-content {
+    display: inline-block;
+    width: 45%;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    height: 600px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #3F3D56, #3F3D56);
+}
+
+
+.card-content:hover {
+    background: linear-gradient(to right, #ff0eeb, #f75acf);
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.card-header {
+    text-align: center;
+    height: 10px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 30px 20px;
+    height: 498px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+/* .card-content .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #7ea0bf, #1c3c66);
+    text-decoration: none;
+    padding: 10px 5px;
+    border-radius: 10px;
+} */
+
+.card-body img {
+    width: 80px;
+    float: left;
+}
+
+.card-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(245, 69, 245, 0.336);
+}
+
+/*ridho */
+
+.container-about {
+    width: 90%;
+    padding-top: 10px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #dadcdf, #888c8f);
+
+}
+
+.cards {
+    width: 13.5%;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 30px;
+    margin: 0 5px 50px 0;
+    transition: 0.3s;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    background: linear-gradient(to right, #3F3D56, #3F3D56);
+}
+
+.card h3,
+.cards h3 {
+    font-size: 19px;
+}
+
+.card:hover,
+.cards:hover {
+    opacity: 0.8;
+}
+
+.card p,
+.cards p {
+    font-size: 15px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    height: 70px;
+    background-color: #3F3D56;
+
+}
+
+footer p {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
