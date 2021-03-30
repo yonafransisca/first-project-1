@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>D09</title>
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="res-menu">
+        <label for="res-menu">
+            <i class="fa fa-bars" id="sign-one"></i>
+            <i class="fa fa-times" id="sign-two"></i>
+        </label>
+            <a href="#"><h1>D09</h1></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#members">Our Member</a></li>
+        </ul>
+    </nav>   
     <main>
         <div class="container">
-            <div class="container-content">
+            <div class="container-home">
+                <!--<div class="card-home">
+                    <div class="content-text">
+                        <h2>Proyek Website D09</h2>
+                     
+                        <p> Selamat datang di proyek website D09.</p>
+                       
+                        <p> Silakan lihat portofolio kami </p>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="./assets/img/background-image.png" alt="">  
+                </div>-->
+                <h1>Proyek Website D09</h1>
+                <p>Selamat datang di proyek website D09. <br>Silakan lihat portofolio kami.</p>
+                <img class="main-image" src="./assets/img/background-image.png" alt="">
+            </div>
+            <div class="container-content" id="articles">
                 <div class="heading">
-                <h1>Articles</h1>
-                <hr>
+                    <h1>Articles</h1>
+                    <hr>
                 </div>
                 <div class="row">
                     <div class="card-content">
                         <div class="card-header">
-                            <h1>React</h1>
+                            <h1>React js</h1>
                             <hr>
                         </div>
                         <div class="card-body">
-                            <img src="assets\img\html.png" alt="">
+                            <img src="assets\img\react.png" alt="">
                             <p>
-                            seperti <code>&lt;article&gt;</code>,<code>&lt;header&gt;</code>,<code>&lt;footer&gt;</code>.
-                            <a href="https://devdocs.io/html/" class=""><code>Ducumentation</code></a>
+                                React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. 
+                                It's used for handling the view layer for web and mobile apps. <br><br><span>Please read the documentation <a href="https://reactjs.org/docs/getting-started.html"> <code> here </code></a></span> 
                             </p>
                         </div>
                     </div>
                     <div class="card-content">
                         <div class="card-header">
-                            <h1>Vue</h1>
+                            <h1>Vue js</h1>
                             <hr>
                         </div>
                         <div class="card-body">
-                        <img src="assets\img\html.png" alt="">
+                        <img src="assets\img\vue.png" alt="">
                             <p>
-                            
-                            <li>CSS level 2, disempurnakan oleh W3C pada tahun 1998, dimana terjadi perubahan pada format dokumen yang bisa ditampilkan di printer.</li>
-                            <li>CSS level 3, pada level ini terjadi perkembangan dimana bisa menampilkan animasi warna dan 3D pada halaman website, dan fitur lain seperti: multiple background, drop-shadow, border-image, border-radius, CSS Object Model dan CSS-Math, untuk saat ini CSS level 3 menjadi yang terbaru.</li>
-                            <a href="https://devdocs.io/css/" class="">Ducumentation</a>  
+                                Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.  
+                                <br><br><span>Please read the documentation <a href="https://v3.vuejs.org/"> <code> here </code></a> </span>
                             </p>
                         </div>
                     </div>
@@ -46,36 +78,35 @@
                             <hr>
                         </div>
                         <div class="card-body">
-                            <img src="assets\img\html.png" alt="">
+                            <img src="assets\img\angular.png" alt="">
                             <p>
-                            Proses penyusunan dan desain JavaScript hanya menghabiskan waktu sepuluh hari oleh Brandan Eich, seorang karyawan Netscape, pada September 1995. Awalnya, 
-                            nama bahasa pemrograman ini adalah Mocha, kemudian menjadi Mona, lalu LiveScript sebelum akhirnya resmi menyandang nama JavaScript. 
-                            
-                            <a href="https://devdocs.io/javascript/" class=""><b>Ducumentation</b></a>
+                                Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript.
+                                <br><br><span>Please read the documentation <a href="https://angular.io/docs"> <code> here </code></a></span> 
                             </p>
                         </div>
                     </div>
                     <div class="card-content">
                         <div class="card-header">
                             <h1>JQuery</h1>
+                            <hr>
                         </div>
                         <div class="card-body">
-                            <img src="assets\img\html.png" alt="">
+                            <img src="assets\img\jquery.png" alt="">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
-                                <a href="#" class="">Ducumentation</a>
+                                jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+                                <br><br><span>Please read the documentation <a href="https://api.jquery.com/"> <code> here </code></a></span> 
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-about">
+            <div class="container-about" id="member1">
                 <div class="heading">
-                    <h1 class="about-title">D09's Members</h1>
+                    <h1 class="about-title" id="members">D09's Members</h1>
                 </div>
                 <div class="row">
-                    <div class="cards" id="member1">
-                        <img src="./assets/img/4eof2l4o1sn51.webp" alt="John">
+                    <div class="cards">
+                        <img src="./assets/img/4eof2l4o1sn51.webp" alt="John" >
                         <h3>Guntur Pratama</h3>
                         <p>Jakarta</p>
                         <a class="instagram" href="https://www.instagram.com/gprtmaaa/">
@@ -110,11 +141,11 @@
                     <div class="cards" id="member4">
                         <img src="./assets/img/ppawzo4o1sn51.webp" alt="John">
                         <h3>Herlyn Striyani </h3>
-                        <p>Solo</p>
+                        <p> Solo</p>
                         <a class="instagram" href="https://www.instagram.com/errherlyns/">
                             <img src="./assets/img/instagram.png" alt="">
                         </a>
-                        <a class="github" href="https://github.com/herlynstriyani/">
+                        <a class="github" href="https://github.com/herlyns/">
                             <img src="./assets/img/github.png" alt="">
                         </a>
                     </div>

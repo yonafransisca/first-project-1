@@ -26,20 +26,25 @@ main {
 a {
     color: #fff;
     font-style: unset;
-    text-decoration: none
+    /* text-decoration: none; */
 }
 
-/*ridho*/
+/* Articles */
 .container-content {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background: linear-gradient(to right, #dadcdf, #888c8f);
 }
 
-.heading {
+.heading h1{
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
+    padding-top: 80px;
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+.heading hr {
+    margin-bottom: 20px;
 }
 
 .row {
@@ -51,19 +56,27 @@ a {
 
 .card-content {
     display: inline-block;
-    width: 45%;
+    width: 40%;
     border: 1px solid #ccc;
     margin-bottom: 50px;
     transition: 0.3s;
-    height: 600px;
     border-radius: 30px;
     background: linear-gradient(to right, #3F3D56, #3F3D56);
+}
+
+p a {
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
 }
 
 
 .card-content:hover {
     background: linear-gradient(to right, #ff0eeb, #f75acf);
     box-shadow: 10px 10px 5px #aaaaaa;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(245, 69, 245, 0.336);
+    transition: all 0.5s;
 }
 
 .card-header {
@@ -76,44 +89,39 @@ a {
 }
 
 .card-body {
-    padding: 30px 20px;
-    height: 498px;
+    padding: 50px 20px;
     font-size: 18px;
     color: rgb(255, 255, 255);
+    display: flex;
 }
-
-/* .card-content .btn {
-    display: block;
-    color: #fff;
-    text-align: center;
-    background: linear-gradient(to right, #7ea0bf, #1c3c66);
-    text-decoration: none;
-    padding: 10px 5px;
-    border-radius: 10px;
-} */
 
 .card-body img {
-    width: 80px;
-    float: left;
+    height: 20%;
+    width: 20%;
+    margin-right: 20px;
 }
 
-.card-content:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(245, 69, 245, 0.336);
+.card-body p {
+    font-size: 15px;
+    text-align: left;
 }
 
-/*ridho */
+.card-body p span {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* Our Team */
 
 .container-about {
     width: 90%;
     padding-top: 10px;
-    margin: 50px auto;
+    margin: 10px auto 50px auto;
     text-align: center;
 }
 
 .about-title {
     font-size: 40px;
-    margin-top: 30px;
     margin-bottom: 50px;
 }
 
@@ -173,31 +181,307 @@ a {
     left: 100px;
 }
 
-#member1 {animation-timing-function: linear;}
-#member2 {animation-timing-function: ease;}
-#member3 {animation-timing-function: ease-in;}
-#member4 {animation-timing-function: ease-out;}
-#member5 {animation-timing-function: ease-in-out;}
-  
-@keyframes mymove {
-    from {top: -10px;}
-    to {top: 60px;}
-    from {top: 60px;}
-    to {top: -10px;}
+/* Header */
+
+/*
+header {
+    height: 65px;
+    width: 100%;
+    background: #3F3D56;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
+
+
+.header-left {
+    float: left;
+    font-size: 40px;
+    padding: 0 40px;
+}
+
+.header-left a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.header-right {
+    float: right;
+    display: inline;
+    margin-right: 25px;
+    padding: 10px 0;
+}
+
+.header-right a {
+    line-height: 40px;
+    padding: 0 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    font-size: 25px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 20px;
+}
+
+.header-right a {
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    background-color: rgba(160, 146, 146, 0.87);
+}
+*/
+
+nav {
+    height: 50px;
+    background-color: #3F3D56;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav h1 {
+    position: absolute;
+    width: 200px;
+    top: 8px;
+    left: 5%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    padding: 5px 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+label #sign-one, label #sign-two {
+    font-size: 30px;
+    float: right;
+    line-height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#res-menu {
+    display: none;
+}
+
+/* Home */
+
+main {
+    padding-top: 100px ;
+    text-align: center;
+}
+
+.main-image {
+    width: 80%;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+/*
+.container-home {
+}
+
+.container-home img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.content-home {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 500px;
+}
+
+.card-home {
+    display: inline-block;
+    width: 50%;
+    margin-top: 220px;
+    margin-left: 245px;
+    transition: 0.3s;
+    height: 375px;
+    background: linear-gradient(to right, #6e6c7e, #8d8ba7); 
+
+}
+*/
+.content-text {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* Gantikan property display ke none */
+    display: none;
+}
+
+#member1 {
+    animation-timing-function: linear;
+}
+
+#member2 {
+    animation-timing-function: ease;
+}
+
+#member3 {
+    animation-timing-function: ease-in;
+}
+
+#member4 {
+    animation-timing-function: ease-out;
+}
+
+#member5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        top: -10px;
+    }
+
+    to {
+        top: 60px;
+    }
+
+    from {
+        top: 60px;
+    }
+
+    to {
+        top: -10px;
+    }
+}
+
+/* Footer */
 
 footer {
     width: 100%;
     bottom: 0px;
     margin: 0 auto;
-    height: 30px;
+    height: 40px;
     background-color: #3F3D56;
 
 }
 
 footer p {
     color: white;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     padding: 5px;
+}
+
+/* Responsive Breakpoint */
+
+@media all and (max-width: 1000px) {
+    .card-content {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .card-content {
+        width: 100%;
+        height: 100%;
+        margin: 10px 10px;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+    }
+
+    .container-home {
+        width: 100%;
+
+
+
+    }
+
+    .card-home {
+        width: 80%;
+        /* margin-top: 280px;
+        margin-left: 120px; */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    label #sign-one {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        background: #3F3D56;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #res-menu:checked ~ ul {
+        left: 0;
+    }
+    
+    #res-menu:checked ~ label #sign-one{
+        display: none;
+    }
+
+    #res-menu:checked ~ label #sign-two{
+        display: block;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
 }
